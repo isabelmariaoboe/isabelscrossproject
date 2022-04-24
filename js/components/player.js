@@ -1,4 +1,4 @@
-const baseUrl = "http://isabelsproject.local/wp-json/wc/store/products"
+const baseUrl = "https://noroffcors.herokuapp.com/" + "http://imgv.link/wp-json/wc/store/products/"
 
 
 const detailContainer = document.querySelector(".movie-details");
@@ -13,7 +13,7 @@ console.log(id);
 
 
 
-const url = "http://imgv.link/wp-json/wc/store/products/" + id;
+const url = baseUrl + id;
 
 
 
