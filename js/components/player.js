@@ -27,12 +27,11 @@ async function fetchMovie() {
         
         // console.log(typeof json)
 
-        // var movie = json.result;
-        // console.log(json.result.name)
+        var movie = json;
 
-        // detailContainer.innerHTML = "";
+        detailContainer.innerHTML = "";
 
-        // createHtml(movie)
+        createHtml(movie)
       
     }
     catch(error) {
@@ -44,14 +43,11 @@ async function fetchMovie() {
 
 fetchMovie();
 
-// function createHtml(movie) {
-//     detailContainer.innerHTML = `<h1>${hospital.name}</h1>
-//                                 <div class="hospital-name">${hospital.formatted_address}</div>
-//                                 <div class="hospital-url">URL: ${hospital.url}</div>
-//                                 <div class="hospital-status">Business status: ${hospital.business_status}</div>
-//                                 <div class="hospital-type">Type: ${hospital.types}</div>
-//                                 <time class="hospital-utc">UTC offset: ${hospital.utc_offset}</time>`;
-// }
+function createHtml(movie) {
+    detailContainer.innerHTML = `<h1>${movie.name}</h1>
+                                <div class="movie-name">${movie.prices.price} ${movie.prices.currency_prefix}</div>
+                                <div class = "product-image" style="background-image:url('${movie.thumbnail}')</div>`;
+}
 
 
 
