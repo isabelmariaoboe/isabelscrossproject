@@ -1,4 +1,4 @@
-const baseUrl = "http://imgv.link/wp-json/wc/store/products"
+const baseUrl = "https://noroffcors.herokuapp.com/" + "http://imgv.link/wp-json/wc/store/products"
 const productContainer = document.querySelector(".results")
 const categories = document.querySelectorAll(".categories");
 const searchButton = document.querySelector(".search-button");
